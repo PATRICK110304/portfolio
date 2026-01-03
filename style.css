@@ -1,0 +1,32 @@
+body {
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+    background-color: #fdfdfd;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card {
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+}
+
+#contact {
+    border-radius: 10px;
+}
+
+#contact a {
+    text-decoration: none;
+}

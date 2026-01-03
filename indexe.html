@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - N'dri Kouakou Patrick</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Patrick N'DRI</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#apropos">À propos</a>
+                <a class="nav-link" href="#competences">Compétences</a>
+                <a class="nav-link" href="#projets">Projets</a>
+                <a class="nav-link" href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">N'DRI KOUAKOU PATRICK ANGELIN</h1>
+            <p class="lead text-muted">Étudiant en informatique | Développeur Web Junior</p>
+        </div>
+    </header>
+    <main class="container my-5">
+        <section id="apropos" class="mb-5">
+            <h2 class="border-bottom pb-2">À propos de moi</h2>
+            <p>Etudiant en informatique passionné par le développement web. Titulaire d'un <strong>Diplôme d'un Brevet de Technicien Supérieur (BTS)</strong> en développement d'applications web et mobiles obtenu à <strong>Pigier Côte d'Ivoire</strong>, j'ai acquis des compétences  en HTML, CSS, PHP, MySQL, Linux(Centos), VB.NET, JavaScript, langage C.</p>
+        </section>
+        <section id="competences" class="mb-5">
+            <h2 class="border-bottom pb-2">Mes Compétences</h2>
+            <div class="row text-center mt-3">
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-primary p-2 w-100">HTML/CSS</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-warning text-dark p-2 w-100">JavaScript</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-dark p-2 w-100">PHP</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-info p-2 w-100">MySQL</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-secondary p-2 w-100">Linux (CentOS)</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-success p-2 w-100">VB.NET</span></div>
+                <div class="col-md-2 col-4 mb-3"><span class="badge bg-danger p-2 w-100">C</span></div>
+            </div>
+        </section>
+
+        <section id="projets" class="mb-5">
+            <h2 class="border-bottom pb-2">Projets Réalisés</h2>
+            <div class="row mt-3">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-danger">Système de Gestion Bancaire</h3>
+                            <p class="card-text">Application complète de gestion de comptes : création de clients, ouvertures de comptes, dépôts et retraits sécurisés avec mise à jour du solde en temps réel.</p>
+                            <p class="small text-primary"><strong>Technologies :</strong> PHP, MySQL, Bootstrap, PDO</p>
+                            <a href="banque/index.php" class="btn btn-outline-danger btn-sm">Voir la démo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title text-success">Gestion d'Inventaire</h3>
+                            <p class="card-text">Petit outil de suivi de stock avec alertes de quantité minimale et export des rapports.</p>
+                            <p class="small text-primary"><strong>Technologies :</strong> Python, SQLite</p>
+                            <a href="#" class="btn btn-outline-success btn-sm">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="mb-5 bg-dark text-white p-4 rounded">
+            <h2>Contactez-moi</h2>
+            <ul class="list-unstyled">
+                <li> <strong>Email :</strong> patrickndr120@gmail.com</li>
+                <li> <strong>Téléphone :</strong> +225 05 00 18 39 20</li>
+                <li> <strong>WhatsApp :</strong> +225 01 43 66 42 01</li>
+                <li> <strong>GitHub :</strong> <a href="#" class="text-white">github.com/ton-profil</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2026 - N'DRI KOUAKOU PATRICK</p>
+    </footer>
+    <script>
+    window.onscroll = function() {
+        var nav = document.querySelector('.navbar');
+        if (window.pageYOffset {">"} 100) {
+            nav.style.background = "#1a1d20";
+        } else {
+            nav.style.background = "#212529";
+        }
+    };
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.onclick = function(e) {
+            e.preventDefault();
+            let target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70,
+                    behavior: 'smooth'
+                });
+            }
+        };
+    });
+</script>
+</body>
+</html>
