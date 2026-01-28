@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de CV Professionnel</title>
+    <link rel="stylesheet" href="style.cv.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Créateur de CV Professionnel</h1>
+            <p class="subtitle">Créez un CV élégant en quelques minutes</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="app-container">
+            <section class="form-section">
+                <h2>Informations Personnelles</h2>
+                <div class="form-group">
+                    <label for="fullname">Nom complet</label>
+                    <input type="text" id="fullname" placeholder="Prénom et Nom">
+                </div>
+                
+                <div class="form-group">
+                    <label for="jobtitle">Titre du poste</label>
+                    <input type="text" id="jobtitle" placeholder="Développeur Web, Designer, etc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="votre@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" placeholder="+33 1 23 45 67 89">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Adresse</label>
+                    <input type="text" id="address" placeholder="Ville, Pays">
+                </div>
+                
+                <div class="form-group">
+                    <label for="about">À propos</label>
+                    <textarea id="about" placeholder="Une brève description de vous-même..."></textarea>
+                </div>
+                
+                <h2>Expériences Professionnelles</h2>
+                <div id="experiences">
+                    <div class="form-group experience-form">
+                        <label>Poste</label>
+                        <input type="text" class="exp-title" placeholder="Développeur Frontend">
+                        
+                        <label>Entreprise</label>
+                        <input type="text" class="exp-company" placeholder="Nom de l'entreprise">
+                        
+                        <label>Période</label>
+                        <input type="text" class="exp-period" placeholder="Jan 2020 - Présent">
+                        
+                        <label>Description</label>
+                        <textarea class="exp-description" placeholder="Description de vos responsabilités et réalisations..."></textarea>
+                    </div>
+                </div>
+                <button class="add-btn" id="add-experience">+ Ajouter une expérience</button>
+                
+                <h2>Formation</h2>
+                <div id="educations">
+                    <div class="form-group education-form">
+                        <label>Diplôme</label>
+                        <input type="text" class="edu-degree" placeholder="Master en Informatique">
+                        
+                        <label>Établissement</label>
+                        <input type="text" class="edu-school" placeholder="Nom de l'université">
+                        
+                        <label>Période</label>
+                        <input type="text" class="edu-period" placeholder2019 - 2021">
+                    </div>
+                </div>
+                <button class="add-btn" id="add-education">+ Ajouter une formation</button>
+                
+                <h2>Compétences</h2>
+                <div class="form-group">
+                    <label for="skills">Liste vos compétences (séparées par des virgules)</label>
+                    <input type="text" id="skills" placeholder="HTML, CSS, JavaScript, React, etc.">
+                </div>
+            </section>
+            
+            <section class="preview-section">
+                <h2>Aperçu de votre CV</h2>
+                <div class="cv-template" id="cv-preview">
+                    <div class="cv-header">
+                        <h1 class="cv-name" id="preview-name">Votre Nom Complet</h1>
+                        <p class="cv-title" id="preview-title">Titre du poste</p>
+                        <p id="preview-contact">email@exemple.com | +33 1 23 45 67 89 | Ville, Pays</p>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">À propos</h3>
+                        <p id="preview-about">Une brève description de vous-même apparaîtra ici.</p>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">Expérience Professionnelle</h3>
+                        <div id="preview-experiences">
+                            <div class="experience-item">
+                                <p class="item-title">Développeur Frontend</p>
+                                <p class="item-subtitle">Nom de l'entreprise</p>
+                                <p class="item-date">Jan 2020 - Présent</p>
+                                <p>Description des responsabilités et réalisations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">Formation</h3>
+                        <div id="preview-educations">
+                            <div class="education-item">
+                                <p class="item-title">Master en Informatique</p>
+                                <p class="item-subtitle">Nom de l'université</p>
+                                <p class="item-date">2019 - 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cv-section">
+                        <h3 class="cv-section-title">Compétences</h3>
+                        <div class="skills-list" id="preview-skills">
+                            <span class="skill">HTML</span>
+                            <span class="skill">CSS</span>
+                            <span class="skill">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="download-btn" id="download-cv">Télécharger le CV</button>
+            </section>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>© 2023 Créateur de CV Professionnel. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script src="script.cv.js"></script>
+    
+</body>
+</html>
